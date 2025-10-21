@@ -2,7 +2,7 @@
 
 > A modern accounting panel built with Next.js, React, TypeScript, React Hook Form, Axios, Tailwind CSS and SQL Server.
 
-![stack-badge](https://img.shields.io/badge/stack-Next.js%20|%20React%20|%20TypeScript-blue) 
+![stack-badge](https://img.shields.io/badge/stack-Next.js%20|%20React%20|%20TypeScript-blue)
 
 ![license-badge](https://img.shields.io/badge/license-MIT-green)
 
@@ -18,26 +18,26 @@ This project is a responsive, secure accounting panel (dashboard) that helps bus
 
 ## 🚀 Key Features
 
-* Authentication & authorization (JWT / session-based — adapt to your security flow)
-* CRUD for Customers, Invoices, Payments, Accounts, and Transactions
-* Form validation and user-friendly error handling with **React Hook Form**
-* API communication with **Axios** (interceptors for auth and error handling)
-* Responsive UI with **Tailwind CSS** and utility classes
-* Reports and charts (placeholder for charting library e.g., Recharts or Chart.js)
-* Database: Microsoft SQL Server with migrations and seeding scripts
-* Type-safe code with TypeScript and typed API responses
+- Authentication & authorization (JWT / session-based — adapt to your security flow)
+- CRUD for Customers, Invoices, Payments, Accounts, and Transactions
+- Form validation and user-friendly error handling with **React Hook Form**
+- API communication with **Axios** (interceptors for auth and error handling)
+- Responsive UI with **Tailwind CSS** and utility classes
+- Reports and charts (placeholder for charting library e.g., Recharts or Chart.js)
+- Database: Microsoft SQL Server with migrations and seeding scripts
+- Type-safe code with TypeScript and typed API responses
 
 ---
 
 ## 🧱 Tech Stack
 
-* Frontend: **Next.js** (App Router or Pages Router depending on your setup)
-* UI: **React** + **Tailwind CSS**
-* Forms: **React Hook Form**
-* HTTP: **Axios**
-* Language: **TypeScript**
-* Database: **Microsoft SQL Server**
-* Others: ESLint, Prettier, Husky (optional)
+- Frontend: **Next.js** (App Router or Pages Router depending on your setup)
+- UI: **React** + **Tailwind CSS**
+- Forms: **React Hook Form**
+- HTTP: **Axios**
+- Language: **TypeScript**
+- Database: **Microsoft SQL Server**
+- Others: ESLint, Prettier, Husky (optional)
 
 ---
 
@@ -65,31 +65,31 @@ This project is a responsive, secure accounting panel (dashboard) that helps bus
 
 ### Prerequisites
 
-* Node.js (>= 18)
-* pnpm or npm or yarn
-* SQL Server running locally or accessible remotely
-* (Optional) `dotnet`/ORM tooling if backend uses .NET
+- Node.js (>= 18)
+- pnpm or npm or yarn
+- SQL Server running locally or accessible remotely
+- (Optional) `dotnet`/ORM tooling if backend uses .NET
 
 ### Install
 
-``
-        # from project root
-        pnpm install
-        # or
-        npm install
-        # or
-        yarn
+`` # from project root
+pnpm install # or
+npm install # or
+yarn
+
 ```
 
 ### Run the development server (frontend)
 
 ```
+
         # Frontend
         pnpm dev
         # or
         npm run dev
         # or
         yarn dev
+
 ```
 
 ### Run API / backend
@@ -97,8 +97,10 @@ This project is a responsive, secure accounting panel (dashboard) that helps bus
 If your API is colocated, start it (example):
 
 ```
+
         cd server
         pnpm dev
+
 ```
 
 ### Database
@@ -106,9 +108,11 @@ If your API is colocated, start it (example):
 * Apply migrations (depends on your ORM/tooling). Example with Prisma:
 
 ```
+
     npx prisma migrate dev --name init
     npx prisma db seed
-```
+
+````
 
 * Or run your SQL migration scripts in `./server/migrations` against your SQL Server instance.
 
@@ -149,14 +153,14 @@ api.interceptors.response.use(
 );
 
 export default api;
-```
+````
 
 ---
 
 ## 🧪 Forms & Validation (React Hook Form)
 
-* Use `useForm<T>()` with TypeScript generics for typed form values.
-* Combine `zod` or `yup` for schema validation and use `@hookform/resolvers`.
+- Use `useForm<T>()` with TypeScript generics for typed form values.
+- Combine `zod` or `yup` for schema validation and use `@hookform/resolvers`.
 
 Example:
 
@@ -187,30 +191,30 @@ import { zodResolver } from '@hookform/resolvers/zod';
 
 ## 🔁 Recommended Conventions
 
-* Keep components small and reusable.
-* Organize by feature/domain (e.g., `/features/invoices`).
-* Use TypeScript interfaces/types for all API payloads.
-* Centralize API calls in `lib/api` or `features/*/api`.
+- Keep components small and reusable.
+- Organize by feature/domain (e.g., `/features/invoices`).
+- Use TypeScript interfaces/types for all API payloads.
+- Centralize API calls in `lib/api` or `features/*/api`.
 
 ---
 
 ## 📌 Deployment Tips
 
-* Frontend: Vercel (easy for Next.js) or any static host + serverless API.
-* Backend: Azure App Service / Azure SQL, AWS Elastic Beanstalk, DigitalOcean App Platform, or Docker container.
-* Use CI/CD pipelines to run tests, lint, and deploy.
-* Store secrets in environment variables or a secrets manager.
+- Frontend: Vercel (easy for Next.js) or any static host + serverless API.
+- Backend: Azure App Service / Azure SQL, AWS Elastic Beanstalk, DigitalOcean App Platform, or Docker container.
+- Use CI/CD pipelines to run tests, lint, and deploy.
+- Store secrets in environment variables or a secrets manager.
 
 ---
 
 ## ✅ Checklist Before Production
 
-* [ ] HTTPS enforced
-* [ ] Secure cookies & proper CORS
-* [ ] Input validation & sanitization
-* [ ] Rate limiting on APIs
-* [ ] Backups for SQL Server
-* [ ] Proper logging and monitoring
+- [ ] HTTPS enforced
+- [ ] Secure cookies & proper CORS
+- [ ] Input validation & sanitization
+- [ ] Rate limiting on APIs
+- [ ] Backups for SQL Server
+- [ ] Proper logging and monitoring
 
 ---
 
@@ -219,7 +223,3 @@ import { zodResolver } from '@hookform/resolvers/zod';
 🌻 Azadeh Sharifi Soltani
 
 Feel free to contribute to this project by submitting a pull request or opening an issue! Made with 💻, ☕, and 🌻 by Azadeh Sharifi Soltani
-
-
-
-
